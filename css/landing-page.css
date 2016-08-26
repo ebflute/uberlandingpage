@@ -224,11 +224,10 @@ hr {margin:30px 0;}
         height: 60px;
       }
       footer {
-        height: 273px;
+        height: 173px;
       }
       footer {
-        background: url("../img/footer-bg.png") repeat-x bottom;
-        background-size: cover;
+        background: url("../img/uber-footer-tile.png") repeat-x bottom;
         margin-left: -20px;
         margin-right: -20px;
         padding-left: 20px;
