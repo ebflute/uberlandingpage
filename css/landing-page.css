@@ -17,7 +17,9 @@ body{
     font-family: "Abel","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
 }
-p {margin-bottom:28px;}
+p {
+    margin-bottom:28px;
+}
 
 h1,
 h2,
@@ -31,42 +33,6 @@ h6 {
 }
 h1 {font-size:1.8em;line-height:1.4em;font-weight:100;}
 h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
-
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.intro-header {
-    
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    
-}
-
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
 
 .promo-box {
 
@@ -83,145 +49,78 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
   border-radius: 6px; 
 }
+    img.brandlogo {margin:20px 0;display:block;}
+    .promo-box h2 {margin-top:0;font-size:1.8em;line-height:1.4em;margin-bottom:0;}
+    .promo-box h3 {margin-top:0;font-size:1.6em;line-height:1.2em;}
+    .promo-box .button {max-width:400px;}
+    h1.uber-title {max-width:600px;}
+    h1.uber-header {display: none;}
 
-.promo-box h2 {margin-top:0;font-size:1.8em;line-height:1.4em;margin-bottom:0;}
-.promo-box h3 {margin-top:0;font-size:1.6em;line-height:1.2em;}
-.promo-box .button {max-width:400px;}
-.uber-title {max-width:600px;}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
+    .banner {
+        padding: 120px 0;
+        color: #f8f8f8;
+        background: url("../img/uber-header-no-logo-1440px.png") no-repeat center center;
+        background-size: cover;
+        margin-bottom:40px;
+        position:relative;
     }
-
-    .intro-message > h1 {
-        font-size: 3em;
+    .banner h1 {
+        margin: 0;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        font-size: 2em;
+        text-align:left;
+        font-weight:100;
+        position:relative;
+        top:-80px;
     }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
-.network-name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.page-heading {
-    position: relative;
-    padding: 30px 15px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #b84d45;
-    margin-bottom: 30px;
-    font-size: 20px;
-    background-image: url("../img/uber-header-no-logo-1440px.png");
-}
-
-.banner {
-    padding: 110px 0;
-    color: #f8f8f8;
-    background: url("../img/uber-header-no-logo-1440px.png") no-repeat center center;
-    background-size: cover;
-    margin-bottom:60px;
-    position:relative;
-}
-
-.banner h1 {
-    margin: 0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-    font-size: 2em;
-    text-align:left;
-    font-weight:100;
-    position:relative;
-    top:-80px;
-
-}
-
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 1.8em;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-.orange {background-color:#ef7e21;}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
+        font-size: 1.8em;
+    }
+    .orange {background-color:#ef7e21;} /* WageWorks brand button color */
+    .btn {
+        position:relative;
+        font-size:21px;
+    }
+    
+
+   .btn span.arrow-img {
+        position:absolute;
+        right:20px;
+        top:6px;
     }
 
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
+.row.button
+    a.btn {
+        position:relative;
+        font-size:21px;
+        line-height:38px;
+        width:300px;
+        height:60px;
+        text-align:left;
+        padding-left:40px;
+
     }
 
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
+    a.btn span.arrow-img{
+        position:absolute;
+        right:20px;
+        top:8px;
     }
-}
-@media all and (min-width: 768px){
-    .page-heading {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        text-align: left;
-        font-size: 24px;
-    }
-}
+
+    
+  
 
 
+@media (min-width: 1149px) and (max-width:1440px) {
+        h1.uber-title {
+            display:block;  
+        }
+        h1.uber-header {
+            display:none;
+        } 
+      }
       /* Set the fixed height of the footer here */
       .push {
         height: 60px;
@@ -244,5 +143,35 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
           margin-right: -20px;
           padding-left: 20px;
           padding-right: 20px;
+        }
+        
+      }
+    @media (max-width: 1150px) {
+        h1.uber-title {
+            display:none;
+        }
+        h1.uber-header {
+            display:block;
+            font-size:1.9em;
+            color:#5994da;
+        }
+        .promo-box{float:right;}
+    }
+
+      @media (min-width: 320px) and (max-width: 919px){
+        img.brandlogo {
+        margin:20px auto;
+        }
+        .banner {
+            background-position:-400px center;
+        }
+      }
+
+       @media (max-width: 519px) {
+        img.brandlogo {
+        margin:20px auto;
+        }
+        .banner {
+            background-position:-700px center;
         }
       }
