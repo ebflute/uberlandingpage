@@ -49,13 +49,19 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
   border-radius: 6px; 
 }
+    /* logo */
     img.brandlogo {margin:20px 0;display:block;}
-    .promo-box h2 {margin-top:0;font-size:1.8em;line-height:1.4em;margin-bottom:0;}
+
+    /* promotion box area */
+    .promo-box h2 {margin-top:-8px;font-size:1.8em;line-height:1.4em;margin-bottom:0;}
     .promo-box h3 {margin-top:0;font-size:1.6em;line-height:1.2em;}
     .promo-box .button {max-width:400px;}
+
+    /* middle text area */
     h1.uber-title {max-width:600px;}
     h1.uber-header {display: none;}
 
+    /* responsive header */
     .banner {
         padding: 120px 0;
         color: #f8f8f8;
@@ -65,16 +71,22 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
         position:relative;
     }
     .banner h1 {
-        margin: 0;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-        font-size: 2em;
+        font-size: 2em; 
+        position:relative;
+        top:-85px;
         text-align:left;
         font-weight:100;
-        position:relative;
-        top:-80px;
+        margin: 0;
+    }
+
+    .banner h1,.promo-box h2, .promo-box h3 {
+        
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        
+       
     }
     .banner h2 {
-        margin: 0;
+        margin: -8px;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 1.8em;
     }
@@ -89,6 +101,7 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
         position:absolute;
         right:20px;
         top:6px;
+        opacity: 0.5;
     }
 
 
@@ -155,7 +168,8 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
             font-size:1.9em;
             color:#5994da;
         }
-        .promo-box{float:right;}
+        
+
     }
 
       @media (min-width: 320px) and (max-width: 919px){
@@ -165,6 +179,7 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
         .banner {
             background-position:-400px center;
         }
+
       }
 
        @media (max-width: 519px) {
@@ -174,4 +189,5 @@ h2 {font-size:1.6em;line-height:1.2em;font-weight:100;}
         .banner {
             background-position:-700px center;
         }
+        
       }
