@@ -119,36 +119,35 @@ h2 {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.08);
         } /* WageWorks brand button color */
 
-    .btn {
+    .btn, a.btn {
         position:relative;
         font-size:21px;  
     }
-    
 
-   .btn span.arrow-img {
+    /* One is a button and one is href that is why there is a diffence */
+    
+    a.btn {
+            
+            line-height:38px;
+            width:300px;
+            height:60px;
+            text-align:left;
+            padding-left:40px;   
+
+        }
+   .btn span.arrow-img,a.btn span.arrow-img {
         position:absolute;
         right:20px;
         top:6px;
         opacity: 0.5;
     }
+    a.btn span.arrow-img {   
+            top:8px;
+        }
 
+    
 
-    a.btn {
-        position:relative;
-        font-size:21px;
-        line-height:38px;
-        width:300px;
-        height:60px;
-        text-align:left;
-        padding-left:40px;   
-
-    }
-
-    a.btn span.arrow-img{
-        position:absolute;
-        right:20px;
-        top:8px;
-    }
+    
 
     .uber-text p sup {
         font-size:.5em;
@@ -156,7 +155,12 @@ h2 {
         top:-8px;
     }
   
-
+img.download-apps {
+    display:inline-block;
+    float:left;
+    margin-right:30px;
+    height:56px;
+}
 
 @media (min-width: 1149px) and (max-width:1440px) {
         h1.uber-title {
@@ -214,6 +218,17 @@ h2 {
 
       }
 
+      @media (max-width: 670px) {
+
+        img.download-apps {
+            display:block;
+            float:none;
+            margin-top:30px;
+            height:70px;
+        }
+
+      }
+
        @media (max-width: 519px) {
         img.brandlogo {
         margin:20px auto;
@@ -225,5 +240,6 @@ h2 {
             max-width:275px;
             padding-left:20px;
         }
+            
         
       }
